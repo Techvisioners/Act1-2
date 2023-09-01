@@ -32,8 +32,15 @@ p {
 }
 
 .nav__logo {
-  height: 80px;
+  height: 80px; /* Default height for desktop */
 }
+
+@media (max-width: 767px) {
+  .nav__logo {
+    height: 50px; /* Adjust the height for phones */
+  }
+}
+
 
 .navbar-toggler {
   margin: 0 auto;
@@ -51,7 +58,7 @@ p {
 }
 
 .carousel {
-  max-width: 80%;
+  max-width: 90%;
   height: auto;
   margin: 0 auto;
 }
