@@ -1,0 +1,56 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-top: 150px; /* Adjust this value to match the height of your fixed header */
+}
+
+h2,
+p {
+  text-align: center;
+}
+
+.content {
+  flex: 1;
+}
+
+.content__container {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.navbar,
+.header {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 992px) {
+  .nav-item {
+    line-height: 80px;
+  }
+}
+
+.nav__logo {
+  height: 80px;
+}
+
+.navbar-toggler {
+  margin: 0 auto;
+  display: block;
+}
+
+.nav-link.nav_text {
+  color: white;
+  transition: color 0.3s;
+  font-size: 100%;
+}
+
+.nav-link.nav_text:hover {
+  color: #ffff00;
+}
+
+.carousel-item {
+    width: 50px;
+    height: auto;
+}
