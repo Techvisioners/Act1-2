@@ -2,7 +2,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  padding-top: 150px; /* Adjust this value to match the height of your fixed header */
+  padding-top: 180px; /* Adjust this value to match the height of your fixed header */
 }
 
 h2,
@@ -50,7 +50,17 @@ p {
   color: #ffff00;
 }
 
-.carousel-item {
-    width: 50px;
-    height: auto;
+.carousel {
+  max-width: 80%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.carousel-fade .carousel-item {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.carousel-fade .carousel-item.active {
+  opacity: 1;
 }
